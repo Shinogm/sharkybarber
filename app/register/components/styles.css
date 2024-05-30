@@ -23,7 +23,6 @@ body {
 .black-box {
     position: absolute;
     width: 700px;
-    height: 400px;
     background-color: #000000; /* Cuadro negro */
     padding: 20px; /* Añadido espacio interno para el contenido */
     box-sizing: border-box; /* Hace que el padding no afecte al ancho total */
@@ -37,15 +36,14 @@ body {
     height: 415px; 
 }
 
-.tamaño-registro {
-    width: 700px; 
-    height: 550px; 
-}
+
 
 .black-box input[type="email"],
 .black-box input[type="telefono"],
 .black-box input[type="nombre"],
-.black-box input[type="password"] {
+.black-box input[type="password"],
+.black-box input[type="apellido"],
+.black-box input[type="token"] {
     width: 97%; /* Ancho de los campos de entrada */
     padding: 10px; /* Espaciado interno */
     margin-bottom: 10px;
