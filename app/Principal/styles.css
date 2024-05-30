@@ -1,0 +1,87 @@
+p {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #FF6B6B, #3B5998); /* Degradado de colores */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Toma el 100% del alto de la ventana del navegador */
+}
+
+.black-box {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    background-color: #000000; /* Cuadro negro */
+    padding: 20px; /* Añadido espacio interno para el contenido */
+    box-sizing: border-box; /* Hace que el padding no afecte al ancho total */
+    color: #ffffff; /* Color de texto blanco dentro del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #000000; /* Borde de 2px sólido */
+}
+
+.tamaño-inicio {
+    width: 700px; 
+    height: 415px; 
+}
+
+.tamaño-registro {
+    width: 700px; 
+    height: 550px; 
+}
+
+.black-box input[type="email"],
+.black-box input[type="telefono"],
+.black-box input[type="nombre"],
+.black-box input[type="password"] {
+    width: 97%; /* Ancho de los campos de entrada */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px;
+    border: 1px solid #ffffff; /* Borde blanco de 1px */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #333333; /* Color de fondo gris oscuro */
+    color: #ffffff; /* Color de texto blanco */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.black-box button {
+    width: 100%; /* Ancho del botón */
+    padding: 10px;
+    color: #ffffff; /* Color de texto negro */
+    border: none; /* Sin borde */
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    background: linear-gradient(to right, blue, red); /* Degradado de azul a rojo */
+}
+
+.overlay-image {
+    position: absolute; /* Posición absoluta */
+    width: 500px; /* Ancho de la imagen igual al cuadro negro */
+    height: 250px; /* Altura de la imagen reducida */
+    top: 20%; /* Coloca la imagen en el centro vertical */
+    left: 50%; /* Coloca la imagen en el centro horizontal */
+    transform: translate(-50%, -50%); /* Centra la imagen */ 
+    border-top-left-radius: 50%; /* Recorta la esquina superior izquierda en forma de círculo */
+    border-top-right-radius: 50%; /* Recorta la esquina superior derecha en forma de círculo */
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+}
+
+.black-box h1 {
+    text-align: center; /* Centra horizontalmente el texto */
+}
+
+.black-box h4 {
+    text-align: center; /* Centra horizontalmente el texto */
+}

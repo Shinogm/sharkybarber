@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHARKY. BARBER SHOP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #FF6B6B, #3B5998); /* Degradado de colores */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+        }
+        .booking-interface {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: rgb(8, 5, 5);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .employee-select {
+            margin-top: 20px;
+            color: rgb(8, 5, 5);
+        }
+        .date-time-select {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        select, input[type="date"], input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="booking-interface">
+        <button class="button">ATRAS</button>
+        <button class="button">AGENDAR CITA</button>
+        <h1>SHARKY. BARBER SHOP</h1>
+        <div class="employee-select">
+            <label for="employee">Seleccione un empleado:</label>
+            <select id="employee">
+                <option value="jony">SEBITAS</option>
+                <option value="jony">LUISILLO</option>
+                <option value="jony">MARTINCILLO</option>
+                <option value="jony">ALFREDILLO</option>
+                <!-- Agrega más opciones de empleados aquí -->
+            </select>
+            <button class="button">CONFIRMAR CITA</button>
+        </div>
+        <div class="date-time-select">
+            <label for="date">SELECCIONE UNA FECHA:</label>
+            <input type="date" id="date">
+            <label for="time">SELECCIONE UN HORARIO:</label>
+            <input type="time" id="time">
+        </div>
+    </div>
+</body>
+</html>
